@@ -1,6 +1,10 @@
 name: Update Every 6 Hours
 
 on:
+    # 当推送到 main 分支时触发
+  push:
+    branches:
+      - master
   schedule:
     # 使用 cron 表达式定义每6小时触发一次
     - cron: '0 */6 * * *'
