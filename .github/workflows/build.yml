@@ -1,0 +1,33 @@
+name: Update Every 6 Hours
+
+on:
+  schedule:
+    # 使用 cron 表达式定义每6小时触发一次
+    - cron: '0 */6 * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      #- name: Checkout repository
+      #  uses: actions/checkout@v3
+
+    # Step 2: 调用外部 API（例如获取天气信息的 API）
+      - name: Call external API
+        id: api_call
+        run: |
+          # 使用 curl 调用外部 API（可以换成实际的 API URL）
+          response=$(curl -s 'https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2')
+          
+          # 输出 API 的响应数据
+          echo "API Response: $response"
+          
+          # 将解析的值存储在 GitHub Actions 的输出变量中
+          echo "::set-output name=api_value::$response"
+
+      # Step 3: 使用前一步的返回值
+      - name: Use API response
+        run: |
+          # 使用之前步骤中保存的返回值
+          echo "The value from API is: ${{ steps.api_call.outputs.api_value }}"
