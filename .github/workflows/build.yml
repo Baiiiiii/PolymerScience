@@ -27,8 +27,12 @@ jobs:
           # 输出 API 的响应数据
           echo "API Response: $response"
           
-          # 将解析的值存储在 GitHub Actions 的输出变量中
-          echo "::set-output name=api_value::$response"
+          # 解码输入的 base64 字符串
+          decoded_string=$(echo "$response" | base64 --decode)
+          echo "Decoded string: $decoded_string"
+          
+           # 将解析的值存储在 GitHub Actions 的输出变量中
+          echo "::set-output name=api_value::$decoded_string"
 
       # Step 3: 使用前一步的返回值
       - name: Use API response
