@@ -26,10 +26,10 @@ jobs:
         id: clear_config
         run: |
           # 清空文件
-          echo "" > config.txt
+          echo "" > config.html
 
           # 确认写入的内容
-          # cat config.txt
+          # cat config.html
 
     # Step 3: 调用外部 API
       - name: call v2rayFree
@@ -48,13 +48,13 @@ jobs:
           # 将解析的值存储在 GitHub Actions 的输出变量中
           # echo "::set-output name=api_value::$decoded_string"
           
-           # 将参数写入到文件 (比如 config.txt)
+           # 将参数写入到文件 (比如 config.html)
           echo "Writing v2ray_free to file..."
-          echo "$response1" >> config.txt
-          # echo "\n" >> config.txt
+          echo "$response1" >> config.html
+          # echo "\n" >> config.html
 
           # 确认写入的内容
-          cat config.txt
+          cat config.html
 
     # Step 4: 调用外部 API
       - name: call subVless
@@ -73,13 +73,13 @@ jobs:
           # 将解析的值存储在 GitHub Actions 的输出变量中
           # echo "::set-output name=api_value::$decoded_string"
           
-           # 将参数写入到文件 (比如 config.txt)
+           # 将参数写入到文件 (比如 config.html)
           echo "Writing sub_vless to file..."
-          echo "$response2" >> config.txt
-          # echo "\n" >> config.txt
+          echo "$response2" >> config.html
+          # echo "\n" >> config.html
 
           # 确认写入的内容
-          cat config.txt
+          cat config.html
           
     # Step 4: 调用外部 API
       - name: call mfsn
@@ -98,19 +98,19 @@ jobs:
           # 将解析的值存储在 GitHub Actions 的输出变量中
           # echo "::set-output name=api_value::$decoded_string"
           
-           # 将参数写入到文件 (比如 config.txt)
+           # 将参数写入到文件 (比如 config.html)
           echo "Writing mfsn to file..."
-          # echo "$response3" >> config.txt
-          # echo "\n" >> config.txt
+          # echo "$response3" >> config.html
+          # echo "\n" >> config.html
 
           # 确认写入的内容
-          # cat config.txt
+          # cat config.html
           
       # Step 5: 使用前一步的返回值
       - name: Use API response
         run: |
           # 打印内容
-          cat config.txt
+          cat config.html
           # 使用之前步骤中保存的返回值
           echo "The value from API is: ${{ steps.api_call.outputs.api_value }}"
 
@@ -125,8 +125,8 @@ jobs:
         run: |
           # 检查是否有更改
           if [[ $(git status --porcelain) ]]; then
-            git add config.txt
-            git commit -m "Update config.txt with new subscription info"
+            git add config.html
+            git commit -m "Update config.html with new subscription info"
           else
             echo "No changes to commit"
           fi
