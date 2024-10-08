@@ -29,17 +29,17 @@ jobs:
           echo "" > config.txt
 
           # 确认写入的内容
-          cat config.txt
+#          cat config.txt
 
     # Step 3: 调用外部 API
       - name: call v2rayFree
         id: api_call_v2ray_free
         run: |
           # 使用 curl 调用外部 API
-          response=$(curl -s 'https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2')
+          response1=$(curl -s 'https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2')
           
           # 输出 API 的响应数据
-          echo "API Response: $response"
+          echo "v2ray_free API Response: $response1"
           
           # 解码输入的 base64 字符串
           # decoded_string=$(echo "$response" | base64 --decode)
@@ -50,8 +50,8 @@ jobs:
           
            # 将参数写入到文件 (比如 config.txt)
           echo "Writing v2ray_free to file..."
-          echo "$response" >> config.txt
-          echo "\n" >> config.txt
+          echo "$response1" >> config.txt
+#          echo "\n" >> config.txt
 
           # 确认写入的内容
           cat config.txt
@@ -61,10 +61,10 @@ jobs:
         id: api_call_sub_vless
         run: |
           # 使用 curl 调用外部 API
-          response=$(curl -s --location --request GET 'https://sub.443888.xyz/vless' --header 'User-Agent: Apifox/1.0.0 (https://apifox.com)' --header 'Accept: */*' --header 'Host: sub.443888.xyz' --header 'Connection: keep-alive')
+          response2=$(curl -s --location --request GET 'https://sub.443888.xyz/vless' --header 'User-Agent: Apifox/1.0.0 (https://apifox.com)' --header 'Accept: */*' --header 'Host: sub.443888.xyz' --header 'Connection: keep-alive')
           
           # 输出 API 的响应数据
-          echo "API Response: $response"
+          echo "sub_vless API Response: $response2"
           
           # 解码输入的 base64 字符串
           # decoded_string=$(echo "$response" | base64 --decode)
@@ -74,9 +74,9 @@ jobs:
           # echo "::set-output name=api_value::$decoded_string"
           
            # 将参数写入到文件 (比如 config.txt)
-          echo "Writing v2ray_free to file..."
-          echo "$response" >> config.txt
-          echo "\n" >> config.txt
+          echo "Writing sub_vless to file..."
+          echo "$response2" >> config.txt
+#          echo "\n" >> config.txt
 
           # 确认写入的内容
           cat config.txt
