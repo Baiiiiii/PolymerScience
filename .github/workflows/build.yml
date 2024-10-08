@@ -100,11 +100,11 @@ jobs:
           
            # 将参数写入到文件 (比如 config.txt)
           echo "Writing mfsn to file..."
-          echo "$response3" >> config.txt
+          # echo "$response3" >> config.txt
           # echo "\n" >> config.txt
 
           # 确认写入的内容
-          cat config.txt
+          # cat config.txt
           
       # Step 5: 使用前一步的返回值
       - name: Use API response
