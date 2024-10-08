@@ -90,10 +90,10 @@ jobs:
           echo "The value from API is: ${{ steps.api_call.outputs.api_value }}"
 
       # Step 6: 配置 Git 用户信息
-      - name: Set Git config
-        run: |
-          git config --local user.name "${{secrets.GIT_USER_NAME}}"
-          git config --local user.email "${{secrets.GIT_EMAIL}}"
+      #- name: Set Git config
+      #  run: |
+      #    git config --local user.name "${{secrets.GIT_USER_NAME}}"
+      #    git config --local user.email "${{secrets.GIT_EMAIL}}"
 
       # Step 7: 提交更改
       - name: Commit changes
@@ -109,4 +109,6 @@ jobs:
       # Step 8: 推送更改到远程仓库
       - name: Push changes
         run: |
-          git push origin HEAD:master  # 将更改推送到 master 分支
+          # git push origin HEAD:master  # 将更改推送到 master 分支
+          git push https://${{secrets.GIT_TOKEN}}@github.com/Baiiiiii/PolymerScience.git HEAD:master
+
