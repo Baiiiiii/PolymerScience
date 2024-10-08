@@ -86,7 +86,7 @@ jobs:
         id: api_mfsn
         run: |
           # 使用 curl 调用外部 API
-          response3=$(curl -s 'https://sub.mfsn.cc/mfsn')
+          response3=$(curl -s 'https://dy.mfsn.cc/sub/v2ray/6K6i6ZiF')
           
           # 输出 API 的响应数据
           echo "sub_vless API Response: $response3"
