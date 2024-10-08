@@ -2,9 +2,9 @@ name: Update Every 6 Hours
 
 on:
     # 当推送到 main 分支时触发
-  push:
-    branches:
-      - master
+#  push:
+#    branches:
+#      - master
   schedule:
     # 使用 cron 表达式定义每6小时触发一次
     - cron: '0 */6 * * *'
@@ -14,28 +14,94 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      #- name: Checkout repository
-      #  uses: actions/checkout@v3
+      # Step 1: 检出仓库代码
+      - name: https://github.com/Baiiiiii/PolymerScience.git
+        uses: master
 
-    # Step 2: 调用外部 API（例如获取天气信息的 API）
-      - name: Call external API
-        id: api_call
+      # Step 2: 清空文件
+      - name: clear config
+        id: clear_config
         run: |
-          # 使用 curl 调用外部 API（可以换成实际的 API URL）
+          # 清空文件
+          echo "" > config.txt
+
+          # 确认写入的内容
+          cat config.txt
+
+    # Step 3: 调用外部 API
+      - name: call v2rayFree
+        id: api_call_v2ray_free
+        run: |
+          # 使用 curl 调用外部 API
           response=$(curl -s 'https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2')
           
           # 输出 API 的响应数据
           echo "API Response: $response"
           
           # 解码输入的 base64 字符串
-          decoded_string=$(echo "$response" | base64 --decode)
-          echo "Decoded string: $decoded_string"
+          # decoded_string=$(echo "$response" | base64 --decode)
+          # echo "Decoded string: $decoded_string"
           
-           # 将解析的值存储在 GitHub Actions 的输出变量中
-          echo "::set-output name=api_value::$decoded_string"
+          # 将解析的值存储在 GitHub Actions 的输出变量中
+          # echo "::set-output name=api_value::$decoded_string"
+          
+           # 将参数写入到文件 (比如 config.txt)
+          echo "Writing v2ray_free to file..."
+          echo "$response" >> config.txt
+          echo "\n" >> config.txt
 
-      # Step 3: 使用前一步的返回值
+          # 确认写入的内容
+          cat config.txt
+
+    # Step 4: 调用外部 API
+      - name: call subVless
+        id: api_call_sub_vless
+        run: |
+          # 使用 curl 调用外部 API
+          response=$(curl -s 'https://sub.443888.xyz/vless')
+          
+          # 输出 API 的响应数据
+          echo "API Response: $response"
+          
+          # 解码输入的 base64 字符串
+          # decoded_string=$(echo "$response" | base64 --decode)
+          # echo "Decoded string: $decoded_string"
+          
+          # 将解析的值存储在 GitHub Actions 的输出变量中
+          # echo "::set-output name=api_value::$decoded_string"
+          
+           # 将参数写入到文件 (比如 config.txt)
+          echo "Writing v2ray_free to file..."
+          echo "$response" >> config.txt
+          echo "\n" >> config.txt
+
+          # 确认写入的内容
+          cat config.txt
+
+      # Step 5: 使用前一步的返回值
       - name: Use API response
         run: |
           # 使用之前步骤中保存的返回值
           echo "The value from API is: ${{ steps.api_call.outputs.api_value }}"
+
+      # Step 6: 配置 Git 用户信息
+      - name: Set Git config
+        run: |
+          git config --local user.name "${{secrets.GIT_USER_NAME}}"
+          git config --local user.email "${{secrets.GIT_EMAIL}}"
+
+      # Step 7: 提交更改
+      - name: Commit changes
+        run: |
+          # 检查是否有更改
+          if [[ $(git status --porcelain) ]]; then
+            git add config.txt
+            git commit -m "Update config.txt with new subscription info"
+          else
+            echo "No changes to commit"
+          fi
+
+      # Step 8: 推送更改到远程仓库
+      - name: Push changes
+        run: |
+          git push origin HEAD:master  # 将更改推送到 master 分支
