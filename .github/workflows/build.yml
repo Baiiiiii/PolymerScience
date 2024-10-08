@@ -29,7 +29,7 @@ jobs:
           echo "" > config.txt
 
           # 确认写入的内容
-#          cat config.txt
+          # cat config.txt
 
     # Step 3: 调用外部 API
       - name: call v2rayFree
@@ -51,7 +51,7 @@ jobs:
            # 将参数写入到文件 (比如 config.txt)
           echo "Writing v2ray_free to file..."
           echo "$response1" >> config.txt
-#          echo "\n" >> config.txt
+          # echo "\n" >> config.txt
 
           # 确认写入的内容
           cat config.txt
@@ -76,7 +76,7 @@ jobs:
            # 将参数写入到文件 (比如 config.txt)
           echo "Writing sub_vless to file..."
           echo "$response2" >> config.txt
-#          echo "\n" >> config.txt
+          # echo "\n" >> config.txt
 
           # 确认写入的内容
           cat config.txt
@@ -84,6 +84,8 @@ jobs:
       # Step 5: 使用前一步的返回值
       - name: Use API response
         run: |
+          # 打印内容
+          cat config.txt
           # 使用之前步骤中保存的返回值
           echo "The value from API is: ${{ steps.api_call.outputs.api_value }}"
 
