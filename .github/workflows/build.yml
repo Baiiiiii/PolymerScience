@@ -16,7 +16,7 @@ jobs:
     steps:
       # Step 1: 检出仓库代码
       - name: https://github.com/Baiiiiii/PolymerScience.git
-        uses: master
+        uses: actions/checkout@master
 
       # Step 2: 清空文件
       - name: clear config
