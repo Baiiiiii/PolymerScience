@@ -42,7 +42,7 @@ jobs:
           echo "v2ray_free API Response: $response1"
           
           # 解码输入的 base64 字符串
-          # decoded_string=$(echo "$response" | base64 --decode)
+          decoded1=$(echo "$response1" | base64 --decode)
           # echo "Decoded string: $decoded_string"
           
           # 将解析的值存储在 GitHub Actions 的输出变量中
@@ -50,11 +50,11 @@ jobs:
           
            # 将参数写入到文件 (比如 config.txt)
           echo "Writing v2ray_free to file..."
-          echo "$response1" >> config.txt
+          echo "$decoded1" >> config.txt
           # echo "\n" >> config.txt
 
           # 确认写入的内容
-          cat config.txt
+          # cat config.txt
 
     # Step 4: 调用外部 API
       - name: call subVless
@@ -67,7 +67,7 @@ jobs:
           echo "sub_vless API Response: $response2"
           
           # 解码输入的 base64 字符串
-          # decoded_string=$(echo "$response" | base64 --decode)
+          decoded2=$(echo "$response2" | base64 --decode)
           # echo "Decoded string: $decoded_string"
           
           # 将解析的值存储在 GitHub Actions 的输出变量中
@@ -75,11 +75,11 @@ jobs:
           
            # 将参数写入到文件 (比如 config.txt)
           echo "Writing sub_vless to file..."
-          echo "$response2" >> config.txt
+          echo "$decoded2" >> config.txt
           # echo "\n" >> config.txt
 
           # 确认写入的内容
-          cat config.txt
+          # cat config.txt
           
     # Step 4: 调用外部 API
       - name: call mfsn
@@ -92,7 +92,7 @@ jobs:
           echo "sub_vless API Response: $response3"
           
           # 解码输入的 base64 字符串
-          # decoded_string=$(echo "$response" | base64 --decode)
+          decoded3=$(echo "$response3" | base64 --decode)
           # echo "Decoded string: $decoded_string"
           
           # 将解析的值存储在 GitHub Actions 的输出变量中
@@ -100,7 +100,7 @@ jobs:
           
            # 将参数写入到文件 (比如 config.txt)
           echo "Writing mfsn to file..."
-          # echo "$response3" >> config.txt
+          echo "$decoded3" >> config.txt
           # echo "\n" >> config.txt
 
           # 确认写入的内容
