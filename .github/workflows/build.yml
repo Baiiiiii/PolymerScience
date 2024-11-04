@@ -31,6 +31,32 @@ jobs:
           # 确认写入的内容
           # cat config.txt
 
+    
+    # Step 4: 调用外部 API
+      - name: call subVless
+        id: api_call_sub_vless
+        run: |
+          # 使用 curl 调用外部 API
+          response2=$(curl -s --location --request GET 'https://sub.443888.xyz/vless' --header 'User-Agent: Apifox/1.0.0 (https://apifox.com)' --header 'Accept: */*' --header 'Host: sub.443888.xyz' --header 'Connection: keep-alive')
+          
+          # 输出 API 的响应数据
+          echo "sub_vless API Response: $response2"
+          
+          # 解码输入的 base64 字符串
+          decoded2=$(echo "$response2" | base64 --decode)
+          # echo "Decoded string: $decoded_string"
+          
+          # 将解析的值存储在 GitHub Actions 的输出变量中
+          # echo "::set-output name=api_value::$decoded_string"
+          
+           # 将参数写入到文件 (比如 config.txt)
+          echo "Writing sub_vless to file..."
+          echo "$decoded2" >> config.txt
+          # echo "\n" >> config.txt
+
+          # 确认写入的内容
+          # cat config.txt
+
     # Step 3: 调用外部 API
       - name: call v2rayFree
         id: api_call_v2ray_free
@@ -56,51 +82,27 @@ jobs:
           # 确认写入的内容
           # cat config.txt
 
+          
     # Step 4: 调用外部 API
-      - name: call subVless
-        id: api_call_sub_vless
-        run: |
+      # - name: call mfsn
+        # id: api_mfsn
+       # run: |
           # 使用 curl 调用外部 API
-          response2=$(curl -s --location --request GET 'https://sub.443888.xyz/vless' --header 'User-Agent: Apifox/1.0.0 (https://apifox.com)' --header 'Accept: */*' --header 'Host: sub.443888.xyz' --header 'Connection: keep-alive')
+         # response3=$(curl -s 'https://dy.mfsn.cc/sub/v2ray/6K6i6ZiF')
           
           # 输出 API 的响应数据
-          echo "sub_vless API Response: $response2"
+         # echo "sub_vless API Response: $response3"
           
           # 解码输入的 base64 字符串
-          decoded2=$(echo "$response2" | base64 --decode)
+          # decoded3=$(echo "$response3" | base64 --decode)
           # echo "Decoded string: $decoded_string"
           
           # 将解析的值存储在 GitHub Actions 的输出变量中
           # echo "::set-output name=api_value::$decoded_string"
           
            # 将参数写入到文件 (比如 config.txt)
-          echo "Writing sub_vless to file..."
-          echo "$decoded2" >> config.txt
-          # echo "\n" >> config.txt
-
-          # 确认写入的内容
-          # cat config.txt
-          
-    # Step 4: 调用外部 API
-      - name: call mfsn
-        id: api_mfsn
-        run: |
-          # 使用 curl 调用外部 API
-          response3=$(curl -s 'https://dy.mfsn.cc/sub/v2ray/6K6i6ZiF')
-          
-          # 输出 API 的响应数据
-          echo "sub_vless API Response: $response3"
-          
-          # 解码输入的 base64 字符串
-          decoded3=$(echo "$response3" | base64 --decode)
-          # echo "Decoded string: $decoded_string"
-          
-          # 将解析的值存储在 GitHub Actions 的输出变量中
-          # echo "::set-output name=api_value::$decoded_string"
-          
-           # 将参数写入到文件 (比如 config.txt)
-          echo "Writing mfsn to file..."
-          echo "$decoded3" >> config.txt
+         # echo "Writing mfsn to file..."
+         # echo "$decoded3" >> config.txt
           # echo "\n" >> config.txt
 
           # 确认写入的内容
