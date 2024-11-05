@@ -28,7 +28,7 @@ jobs:
           # 获取当前时间并格式化
           current_time=$(date "+%Y-%m-%d %H:%M:%S")
           # 时间进行url编码
-          url_time = $(echo -n "ss://bm9uZTox@0.0.0.0:80#更新时间为: $current_time" | jq -sRr @uri)
+          url_time=$(echo -n "ss://bm9uZTox@0.0.0.0:80#更新时间为: $current_time" | jq -sRr @uri)
           
           echo "$url_time" > config.txt
 
