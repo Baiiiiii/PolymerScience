@@ -20,13 +20,21 @@ jobs:
       # Step 1: 检出仓库代码
       - name: https://github.com/Baiiiiii/PolymerScience.git
         uses: actions/checkout@master
+        
+      - name: Get time in Beijing (China)
+        run: |
+          # 设置时区为上海（北京时间）
+          export TZ="Asia/Shanghai"
+          # 获取当前时间并格式化
+          current_time=$(date "+%Y-%m-%d %H:%M:%S")
+          echo "更新时间为: $current_time" > config.txt
 
       # Step 2: 清空文件
-      - name: clear config
-        id: clear_config
-        run: |
-          # 清空文件
-          echo "" > config.txt
+      #- name: clear config
+      #  id: clear_config
+      #  run: |
+      #    # 清空文件
+      #    echo "" > config.txt
 
           # 确认写入的内容
           # cat config.txt
