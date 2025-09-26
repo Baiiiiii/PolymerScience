@@ -1,6 +1,5 @@
-ss://bm9uZTox@0.0.0.0:80#%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E4%B8%BA%3A%202025-09-26%2020%3A16%3A55
+ss://bm9uZTox@0.0.0.0:80#%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E4%B8%BA%3A%202025-09-27%2002%3A10%3A58
 
-hysteria2://dongtaiwang.com@104.168.10.176:35205?insecure=1&sni=apple.com#United%20States_Los%20Angeles_hy2_...%20%233
 hysteria2://fabd2b79-693a-4a37-827c-6d299e8813b1@133.18.163.202:443?insecure=1&sni=www.microsoft.com#Channel%20id%3A%20%40ShadowProxy66%F0%9F%87%AF%F0%9F%87%B5
 hysteria2://20050105zhu@204.44.110.129:51541?insecure=1&sni=www.bing.com#%F0%9F%87%A9%F0%9F%87%AA%40FreakConfig
 hysteria2://3QlSMKyqLp@android.yas-nowin.ir:443?insecure=0&sni=android.yas-nowin.ir#%F0%9F%87%A9%F0%9F%87%AA%40EXPRESSVPN_420%20-%3E%20%D9%87%D9%85%D9%87%20%D8%A7%D9%BE%D8%B1%D8%A7%D8%AA...
@@ -15,7 +14,7 @@ hysteria2://80747420-96c4-4a2f-83e6-eea4e46beb09@70.34.215.221:20335?insecure=1&
 hysteria2://80747420-96c4-4a2f-83e6-eea4e46beb09@drhystuichdfy.samanidempire.org:20335?insecure=1&sni=drhystuichdfy.samanidempire.org&obfs=salamander&obfs-password=U1wBrYQyFm#All-%40IRAN_V2RAY1
 hysteria2://8da7bd17-70ab-472d-a925-cc827857dc35@de.youyacloud.me:443?insecure=1&sni=de.youyacloud.me&obfs=salamander&obfs-password=qBbeISsJ8AK48fZW#All-%40IRAN_V2RAY1%20%231
 hysteria2://Telegram--%3E%40Ln2Ray@gavazn.lnmarketplace.net:45000?insecure=1&sni=gavazn.55994421.xyz&obfs=salamander&obfs-password=Telegram-->@Ln2Ray#%F0%9F%87%B3%F0%9F%87%B1%40FreakConfig
-hysteria2://Yet-Another-Public-Config-1@yapc-1.adamhayward.co.uk:35000?insecure=1&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#%40V2RAYNG_1378
+hysteria2://Yet-Another-Public-Config-1@yapc-1.adamhayward.co.uk:35000?insecure=0&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#All-%40IRAN_V2RAY1%20%232
 hysteria2://Yet-Another-Public-Config-1@yapc-1.adamhayward.co.uk:36300?insecure=0&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#%F0%9F%92%8E%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF%20%D9%87%D8%A7%DB%8C%20%D8%A8%DB%8C%D8%B4%D8%AA%D8%B1%20%D8%AF%D8%B1%20%DA%86%D9%86%D9%84%20%D8%AA%D9%84%DA%AF%D8%B1%D8%A7...%20%231
 hysteria2://Yet-Another-Public-Config-1@yapc-1.adamhayward.co.uk:36400?insecure=0&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#All-%40IRAN_V2RAY1%20%233
 hysteria2://Yet-Another-Public-Config-1@yapc-1.adamhayward.co.uk:36600?insecure=0&sni=YAPC-1.afshin.ir&obfs=salamander&obfs-password=Yet-Another-Public-Config-1#%F0%9F%92%8E%DA%A9%D8%A7%D9%86%D9%81%DB%8C%DA%AF%20%D9%87%D8%A7%DB%8C%20%D8%A8%DB%8C%D8%B4%D8%AA%D8%B1%20%D8%AF%D8%B1%20%DA%86%D9%86%D9%84%20%D8%AA%D9%84%DA%AF%D8%B1%D8%A7...%20%232
@@ -81,5 +80,5 @@ vless://b65f4df7-f6af-42b2-877a-cef33f21675e@141.193.27.32:2096?allowInsecure=0&
 vless://b65f4df7-f6af-42b2-877a-cef33f21675e@195.13.45.32:2096?allowInsecure=0&sni=kejiland.freewarp.eu.org&type=ws&host=kejiland.freewarp.eu.org&path=/snippetssecurity=tls#US_speednode_0039
 vless://b65f4df7-f6af-42b2-877a-cef33f21675e@160.79.105.32:2096?allowInsecure=0&sni=kejiland.freewarp.eu.org&type=ws&host=kejiland.freewarp.eu.org&path=/snippetssecurity=tls#US_speednode_0040
 vless://b65f4df7-f6af-42b2-877a-cef33f21675e@166.62.106.32:2096?allowInsecure=0&sni=kejiland.freewarp.eu.org&type=ws&host=kejiland.freewarp.eu.org&path=/snippetssecurity=tls#US_speednode_0041
-ss://YWVzLTI1Ni1nY206Y2NmNDI2ZjFmZTc4@103.103.245.158:443?plugin=v2ray-plugin;mode=websocket;mux=8;path=/zksuapgx;host=newroot2v1.dsjsapp.com;tls#%E9%A6%99%E6%B8%AF2%7C%40ripaojiedian
 ss://cmM0LW1kNTplZmFuY2N5dW4@cn01.efan8867801.xyz:8766?plugin=obfs-local;obfs=http;obfs-host=202509242154338-Zr8tJCX9sq.download.microsoft.com#%E6%97%A5%E6%9C%AC%7C%40ripaojiedian
+ss://YWVzLTI1Ni1nY206Y2NmNDI2ZjFmZTc4@103.103.245.158:443?plugin=v2ray-plugin;mode=websocket;mux=8;path=/zksuapgx;host=newroot2v1.dsjsapp.com;tls#%E9%A6%99%E6%B8%AF2%7C%40ripaojiedian
