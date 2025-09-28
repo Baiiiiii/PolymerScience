@@ -1,4 +1,4 @@
-ss://bm9uZTox@0.0.0.0:80#%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E4%B8%BA%3A%202025-09-28%2014%3A12%3A02
+ss://bm9uZTox@0.0.0.0:80#%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E4%B8%BA%3A%202025-09-28%2020%3A14%3A44
 
 hysteria2://20050105zhu@204.44.110.129:51541?insecure=1&sni=www.bing.com#%F0%9F%87%A9%F0%9F%87%AA%40FreakConfig
 hysteria2://2b67ONZROv%2BfRVMxB94BSw%3D%3D@5.231.70.79:443?insecure=1&sni=bing.com#r%E2%99%A1ya
