@@ -1,4 +1,4 @@
-ss://bm9uZTox@0.0.0.0:80#%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E4%B8%BA%3A%202025-09-28%2002%3A10%3A29
+ss://bm9uZTox@0.0.0.0:80#%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E4%B8%BA%3A%202025-09-28%2008%3A47%3A16
 
 hysteria2://fabd2b79-693a-4a37-827c-6d299e8813b1@133.18.163.202:443?insecure=1&sni=www.microsoft.com#Channel%20id%3A%20%40ShadowProxy66%F0%9F%87%AF%F0%9F%87%B5
 hysteria2://20050105zhu@204.44.110.129:51541?insecure=1&sni=www.bing.com#%F0%9F%87%A9%F0%9F%87%AA%40FreakConfig
