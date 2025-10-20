@@ -1,4 +1,4 @@
-ss://bm9uZTox@0.0.0.0:80#%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E4%B8%BA%3A%202025-10-20%2014%3A14%3A47
+ss://bm9uZTox@0.0.0.0:80#%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E4%B8%BA%3A%202025-10-20%2020%3A17%3A54
 
 hysteria2://10822856-7452-43ec-b35b-6f24ea33530f@chervhill.hajalii.com:29662?insecure=0&sni=chervhill.hajalii.com&obfs=salamander&obfs-password=xFGh9dsyreJV9sMs1RUnFbwRdon#%40Mr_Config_Group%E2%9C%8C%EF%B8%8F
 hysteria2://2429bee3-e0c1-47dd-b420-75e6512b184b@129.153.59.26:30300?insecure=1&sni=www.bing.com#%40meli_proxyy
