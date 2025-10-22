@@ -1,4 +1,4 @@
-ss://bm9uZTox@0.0.0.0:80#%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E4%B8%BA%3A%202025-10-22%2014%3A14%3A52
+ss://bm9uZTox@0.0.0.0:80#%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E4%B8%BA%3A%202025-10-22%2020%3A18%3A22
 
 hysteria2://07c122ad-50b2-4f61-9435-efcf112bb10b@104.250.239.32:53810?insecure=0&sni=real.getafreenode.sbs#%40freenettir
 hysteria2://07c122ad-50b2-4f61-9435-efcf112bb10b@185.126.255.78:45294?insecure=0&sni=real.getafreenode.sbs#%40freenettir%20%231
