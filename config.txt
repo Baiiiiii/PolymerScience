@@ -1,4 +1,4 @@
-ss://bm9uZTox@0.0.0.0:80#%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E4%B8%BA%3A%202025-10-25%2014%3A12%3A35
+ss://bm9uZTox@0.0.0.0:80#%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4%E4%B8%BA%3A%202025-10-25%2020%3A14%3A55
 
 hysteria2://571ec94e-613c-430a-93de-397d3d237475@hshl.huasuan666.top:22157?insecure=1&sni=hshl.huasuan666.top#%40v2ray_configs_pool%20%234
 hysteria2://78c2bad7-f5f3-41f2-88cc-81de9d05040b@lsj3.mangshe.xyz:2056?insecure=1&sni=lsj3.mangshe.xyz#%40v2ray_configs_pool%20%238
